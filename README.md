@@ -8,5 +8,5 @@ It is a industry based material vendor management tool developed using Python  D
 4. Run the project using following command: python manage.py runserver.
 
 # Preview
-Uploading Admin Login — Mozilla Firefox 2024-07-06 13-26-45.mp4…
+https://github.com/puneetrajbhardwaj/MaterialManagement/assets/100114955/dc1988ca-e24d-49c8-a5f9-6efe049e3d33
 
