@@ -1,6 +1,9 @@
 # MaterialManagement
 It is a industry based material vendor management tool developed using Python  Djamgo and Basic frontend tools like HTML CSS JavaScript and Jquery Developed durning Python Django Training at Numeric infosystem.
 
+# Technology Used
+Django, HTML, CSS, JavaScript, Jquery, Python, Bootstrap
+
 # Deployement
 1. Setup this code in a system in a system having Django and Python installed.
 2. Connect the database using settings in pool.py and poolDict.py. 
