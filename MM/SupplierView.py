@@ -5,7 +5,7 @@ from . import Pool
 
 def SupplierInterface(request):
     try:
-        result = request.session['ADMIN']
+        # result = request.session['ADMIN']
         return render(request, "SupplierInterface.html")
     except Exception as e:
         return render(request, 'AdminLogin.html')

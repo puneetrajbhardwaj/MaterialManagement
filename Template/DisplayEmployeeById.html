@@ -232,19 +232,18 @@ The above copyright notice and this permission notice shall be included in all c
               </div>
 
          </div>
-
           <div class="row gap">
               <div class="col" style="display: flex; justify-content: center;align-items: center;">
 
-                {%  ifequal row.3 "Male"  %}
+                {%  if row.3 == "Male"  %}
                 <input type="radio"  checked   value="Male" name="gender"><i class="fas fa-male" style="color:darkviolet; margin-left: 10px;margin-right: 30px; font-size: 25px;"></i>
                   <input type="radio"   value="Female" name="gender"><i class="fas fa-female" style="color:deeppink; margin-left: 10px;margin-right: 30px; font-size: 25px;"></i>
-                {% endifequal %}
+                {% endif %}
 
-              {%   ifequal row.3 "Female" %}
+                {%   if row.3 == "Female" %}
                 <input type="radio"     value="Male" name="gender"><i class="fas fa-male" style="color:darkviolet; margin-left: 10px;margin-right: 30px; font-size: 25px;"></i>
                   <input type="radio" checked  value="Female" name="gender"><i class="fas fa-female" style="color:deeppink; margin-left: 10px;margin-right: 30px; font-size: 25px;"></i>
-                {% endifequal %}
+                {% endif %}
 
               </div>
 

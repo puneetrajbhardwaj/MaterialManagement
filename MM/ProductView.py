@@ -18,7 +18,7 @@ def ProductSubmit(request):
         db,cmd=Pool.ConnectionPool()
         cmd.execute(q)
         db.commit()
-        F=open("D:/django/MM/assets/"+producticon,"wb")
+        F=open("D:/django/Material Mangement/MaterialManagement/assets/"+producticon,"wb")
         for chunk in icon.chunks():
             F.write(chunk)
         F.close()
@@ -107,12 +107,12 @@ def SaveEditProductIcon(request):
         db,cmd=Pool.ConnectionPool()
         cmd.execute(q)
         db.commit()
-        F=open("D:/django/MM/assets/"+filename,"wb")
+        F=open("D:/django/Material Mangement/MaterialManagement/assets/"+filename,"wb")
         for chunk in picture.chunks():
             F.write(chunk)
         F.close()
         db.close()
-        os.remove('D:/django/MM/assets/'+oldpicture)
+        os.remove('D:/django/Material Mangement/MaterialManagement/assets/'+oldpicture)
         return DisplayProducts(request)
     except Exception as e:
         print("Error:", e)

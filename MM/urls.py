@@ -32,6 +32,7 @@ urlpatterns = [
     path('checkadminlogin',AdminView.CheckAdminLogin),
     path('adminlogout/',AdminView.AdminLogout),
     #Employee
+    path('',EmployeeView.EmployeeLogin),
     path('employeelogin/', EmployeeView.EmployeeLogin),
     path('employeedashboard/', EmployeeView.EmployeeDashboard),
     path('checkemployeelogin', EmployeeView.CheckEmployeeLogin),

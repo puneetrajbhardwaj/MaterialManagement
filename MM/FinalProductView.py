@@ -69,7 +69,7 @@ def FinalProductSubmit(request):
         dbe, cmd = Pool.ConnectionPool()
         cmd.execute(q)
         dbe.commit()
-        F = open("D:/django/MM/assets/"+filename, "wb")
+        F = open("D:/django/Material Mangement/MaterialManagement/assets/"+filename, "wb")
         for chunk in picture.chunks():
             F.write(chunk)
         F.close()

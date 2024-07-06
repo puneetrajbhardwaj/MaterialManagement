@@ -17,7 +17,7 @@ def SubCategorySubmit(request):
         db,cmd=Pool.ConnectionPool()
         cmd.execute(q)
         db.commit()
-        F=open("D:/django/MM/assets/"+subcategoryicon,"wb")
+        F=open("D:/django/Material Mangement/MaterialManagement/assets/"+subcategoryicon,"wb")
         for chunk in icon.chunks():
             F.write(chunk)
         F.close()
@@ -119,12 +119,12 @@ def SaveEditSubcategoryIcon(request):
         db,cmd=Pool.ConnectionPool()
         cmd.execute(q)
         db.commit()
-        F=open("D:/django/MM/assets/"+filename,"wb")
+        F=open('D:/django/Material Mangement/MaterialManagement/assets/'+filename,"wb")
         for chunk in picture.chunks():
             F.write(chunk)
         F.close()
         db.close()
-        os.remove('D:/django/MM/assets/'+oldpicture)
+        os.remove('D:/django/Material Mangement/MaterialManagement/assets/'+oldpicture)
         return DisplaySubCategories(request)
     except Exception as e:
         print("Error:", e)
